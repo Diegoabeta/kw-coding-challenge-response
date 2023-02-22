@@ -1,0 +1,71 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+      "plugin:react/recommended",
+      "airbnb",
+      "plugin:react/jsx-runtime"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 14,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "unused-imports"
+    ],
+    "rules":  {
+      "no-debugger": 0,
+      "react/prop-types": 0,
+      "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+      "react/jsx-filename-extension": 0,
+      "no-restricted-globals": 1,
+      "linebreak-style": 0,
+      "arrow-parens": ["off", "always"],
+      "class-methods-use-this": ["off", "always"],
+      "comma-dangle": ["error", {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }],
+      "consistent-return": ["off", "always"],
+      "import/no-extraneous-dependencies": "off",
+      "import/prefer-default-export": "off",
+      "jsx-quotes": ["error", "prefer-single"],
+      "lines-between-class-members": ["off", "always"],
+      "max-len": "off",
+      "no-await-in-loop": ["off", "always"],
+      "no-console": "off",
+      "no-extra-boolean-cast": "off",
+      "no-restricted-syntax": [
+        "error",
+        {
+          "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+          "message": "Unexpected property on console object was called"
+        }
+      ],
+      "no-continue": ["off", "always"],
+      "no-lonely-if": ["off", "always"],
+      "no-nested-ternary": ["off", "always"],
+      "no-param-reassign": ["off", "always"],
+      "no-plusplus": ["off", "always"],
+      "no-sequences": ["off", "always"],
+      "react/button-has-type": 1,
+      "no-underscore-dangle": ["off", "always"],
+      "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+      "semi": "error",
+      "eqeqeq": "error",
+      "unused-imports/no-unused-imports": "warn",
+      "unused-imports/no-unused-vars": [
+        "warn",
+        { "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+      ]
+    }
+}

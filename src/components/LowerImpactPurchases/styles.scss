@@ -1,0 +1,76 @@
+
+.lower-impact-purchases section{ display: flex;
+    align-items: center;    
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }}
+
+.time-period{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-bottom: solid grey 1px;
+}
+.month-year-selected{
+  all:unset;
+  padding: 5px;
+  font-weight:bold;
+  border: solid gray 1px;
+  color: rgb(61, 61, 61);
+  margin-bottom: -1px;
+  border-bottom: 0ch;
+  background-color: white;
+  border-top-left-radius: 6%;
+  border-top-right-radius: 6%;
+}
+
+.month-year{
+    all:unset;
+    margin: 0px;
+    padding: 4px;
+    font-weight:bold;
+    border: solid rgb(200, 200, 200) 1px;
+    color: rgb(174, 174, 174);
+    margin: 0 5px;
+    border-top-left-radius: 6%;
+    border-top-right-radius: 6%;
+
+}
+.month-year:hover{
+  cursor: pointer
+
+}
+.list-container{
+    display: flex;
+    border-bottom: solid rgba(215, 215, 215, 0.928) 1px;
+}
+
+.list-item{
+    font-weight:bold ;
+    flex: 3;
+    color: rgb(61, 61, 61);
+    padding: 15px;
+    margin: 0px;
+    margin-left: 40px;
+    justify-content: left;
+    text-align: left;
+}
+
+.total-spent{
+    flex: 1;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+
+
+}
+#go-to{
+    font-weight: bold;
+    color: rgb(154, 154, 154);
+    all:unset;
+
+ 
+}
+#go-to:hover{
+    cursor: pointer;
+}
+
